@@ -13,11 +13,17 @@ class DatabaseSeeder extends Seeder {
 	public function run()
 	{
 		Model::unguard();
-        
+
         DB::table('users')->insert([
             'name' => 'Administrador',
             'email' => 'administrador@itesm.mx',
             'password' => bcrypt('ijkl20ur10'),
+        ]);
+
+				DB::table('objects')->insert([
+						'type' => 'Otro',
+						'image' => '01.png',
+						'description' => 'Objeto de Prueba',
         ]);
 
 		// $this->call('UserTableSeeder');
