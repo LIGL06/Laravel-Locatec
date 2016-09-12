@@ -1,4 +1,4 @@
-<?php namespace App\Commands;
+<?php namespace locaTEC\Commands;
 
 abstract class Command {
 

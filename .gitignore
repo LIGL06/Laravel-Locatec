@@ -1,7 +1,6 @@
 <<<<<<< HEAD
 /vendor
 /node_modules
-.env
 =======
 vendor/
 node_modules/

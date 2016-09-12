@@ -1,4 +1,4 @@
-<?php namespace App\Events;
+<?php namespace locaTEC\Events;
 
 abstract class Event {
 

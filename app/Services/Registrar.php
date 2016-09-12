@@ -1,6 +1,6 @@
-<?php namespace App\Services;
+<?php namespace locaTEC\Services;
 
-use App\User;
+use locaTEC\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 

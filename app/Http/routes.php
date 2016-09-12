@@ -13,7 +13,7 @@
 
 // Route::get('/', 'WelcomeController@index');
 Route::get('/', 'IndexController@index');
-Route::get('/auth','');
+Route::get('dashboard','DashboardController@index');
 // Route::get('home', 'HomeController@index');
 
 Route::controllers([

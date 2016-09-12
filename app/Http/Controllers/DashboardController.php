@@ -2,23 +2,25 @@
 
 use locaTEC\Http\Requests;
 use locaTEC\Http\Controllers\Controller;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
-class IndexController extends Controller {
+class DashboardController extends Controller {
 
-	public function __construct()
-	{
-		$this->middleware('guest');
-	}
 	/**
 	 * Display a listing of the resource.
 	 *
 	 * @return Response
 	 */
-	public function index()
+	 public function __construct()
+ 	{
+ 		$this->middleware('auth');
+ 	}
+	public function index(Request $request)
 	{
-		return view('index');
+		$request->user();
+		$user = Auth::user();
+		return view('home');
 	}
 
 	/**

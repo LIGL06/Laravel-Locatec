@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateObjectsTable extends Migration {
+class CreateCategoriesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,11 +12,9 @@ class CreateObjectsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('objects', function (Blueprint $table){
-			$table->increments('idobjeto');
-			$table->string('type');
-			$table->string('image');
-			$table->string('description');
+		Schema::create('categories', function(Blueprint $table)
+		{
+			$table->increments('idcetogory');
 			$table->timestamps();
 		});
 	}
@@ -28,7 +26,7 @@ class CreateObjectsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('objects');
+		Schema::drop('categories');
 	}
 
 }
